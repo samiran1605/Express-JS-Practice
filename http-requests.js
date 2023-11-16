@@ -23,7 +23,7 @@ app.post('/api/people', (req, res) => {
 })
 
 
-app.post('/api/people/postman', (req, res) => {
+app.post('/api/postman/people', (req, res) => {
   const { name } = req.body
   if (!name) {
     return res.status(400).json({ success: false, message: 'provide name value' })
